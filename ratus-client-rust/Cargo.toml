@@ -1,0 +1,17 @@
+[package]
+name = "ratus-client-rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.45.1", features = ["full"] }
+tokio-tungstenite = "0.26.2"
+tungstenite = "0.26.2"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+base64 = "0.22.1"
+win-screenshot = "4.0.13"
+image = "0.25.6"
+futures-util = "0.3.31"
+winapi = { version = "0.3.9", features = ["winuser"] }
+clap = { version = "4.5.11", features = ["derive"] }

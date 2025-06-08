@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@plugin 'tailwind-scrollbar';
+body {
+  background-color: black;
+}
