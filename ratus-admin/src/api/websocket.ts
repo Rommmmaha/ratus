@@ -2,7 +2,7 @@ import { useActiveUserStore } from "@/stores/activeUserStore";
 import { useAllUsersStore } from "@/stores/allUsersStore";
 import type { User } from "@/types";
 
-const WS_URL = `ws://${window.location.hostname}:5555`;
+const WS_URL = `ws://${window.location.host}`;
 
 /**
  * WebSocketClient handles the websocket connection and message routing for the admin UI.
