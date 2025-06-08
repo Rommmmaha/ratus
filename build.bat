@@ -18,9 +18,3 @@ xcopy /E /I /Y dist "%ROOT%!ratus-production\admin\"
 cd "%ROOT%ratus-client-rust"
 CALL cargo build --release
 copy /Y target\release\ratus-client-rust.exe "%ROOT%!ratus-production\client-rust.exe"
-
-set /p RUN_SERVER="Run server now? (y/n): "
-if /I "%RUN_SERVER%"=="y" (
-  cd "%ROOT%!ratus-production"
-  CALL server.exe
-)
