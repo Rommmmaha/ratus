@@ -43,4 +43,4 @@ jobs:
         with:
           name: ratus-build-artifact
           path: |
-            !ratus-production/
+            ratus-build/
