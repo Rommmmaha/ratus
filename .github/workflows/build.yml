@@ -35,6 +35,7 @@ jobs:
           bun install
 
       - name: Build with build.bat
+        shell: cmd
         run: build.bat
 
       - name: Archive build outputs
